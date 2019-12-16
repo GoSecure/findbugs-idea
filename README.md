@@ -1,18 +1,17 @@
-FindBugs-IDEA
+# SpotBugs-IDEA
 
-Copyright 2008 2009 2010 2011 2012 2013 Andre Pfeiler <andrepdo@dev.java.net>
+SpotBugs-IDEA provides static byte code analysis to look for bugs in Java code from within IntelliJ IDEA.
+The plugin uses [SpotBugs](https://spotbugs.github.io/) under the hood.
 
-FindBugs for IntelliJ IDEA
-Provides static byte code analysis to look for bugs in Java code from within IntelliJ IDEA.
-FindBugs-IDEA uses FindBugs&trade; under the hood. for more information
-see http://findbugs.sourceforge.net/
+Copyright 2008-2013 [Andre Pfeiler](andrepdo@dev.java.net)
 
+### FindBugs trademark and licenses
 
 Both the name FindBugs and the FindBugs bug mark are
 trademarked by the University of Maryland.
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+[The Apache Software Foundation](http://www.apache.org/).
 
 FindBugs Copyright  2003-2007 University of Maryland and others. 
 The FindBugs name and logo are trademarked by the University of Maryland.
