@@ -24,7 +24,7 @@ import org.jetbrains.annotations.Nullable;
 import org.twodividedbyzero.idea.findbugs.core.FindBugsResult;
 
 public interface AnalysisFinishedListener {
-	Topic<AnalysisFinishedListener> TOPIC = Topic.create("FindBugs Analysis Finished", AnalysisFinishedListener.class);
+	Topic<AnalysisFinishedListener> TOPIC = Topic.create("SpotBugs Analysis Finished", AnalysisFinishedListener.class);
 
 	/**
 	 * Invoked by EDT.

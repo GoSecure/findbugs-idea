@@ -21,7 +21,7 @@ package org.twodividedbyzero.idea.findbugs.messages;
 import com.intellij.util.messages.Topic;
 
 public interface AnalysisAbortedListener {
-	Topic<AnalysisAbortedListener> TOPIC = Topic.create("FindBugs Analysis Aborted", AnalysisAbortedListener.class);
+	Topic<AnalysisAbortedListener> TOPIC = Topic.create("SpotBugs Analysis Aborted", AnalysisAbortedListener.class);
 
 	/**
 	 * Invoked by EDT.

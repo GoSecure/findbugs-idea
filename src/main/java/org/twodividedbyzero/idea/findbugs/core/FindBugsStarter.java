@@ -212,7 +212,7 @@ public abstract class FindBugsStarter implements AnalysisAbortingListener {
 
 	private void asyncStart(@NotNull final ProgressIndicator indicator, final boolean justCompiled) {
 		indicator.setIndeterminate(true);
-		indicator.setText("Configure FindBugs...");
+		indicator.setText("Configure SpotBugs...");
 		try {
 			asyncStartImpl(indicator, justCompiled);
 		} catch (final ProcessCanceledException ignore) {

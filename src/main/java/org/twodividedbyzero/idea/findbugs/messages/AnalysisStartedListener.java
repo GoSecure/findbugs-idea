@@ -28,7 +28,7 @@ import com.intellij.util.messages.Topic;
  * @since 0.9.995
  */
 public interface AnalysisStartedListener {
-	Topic<AnalysisStartedListener> TOPIC = Topic.create("FindBugs Analysis Started", AnalysisStartedListener.class);
+	Topic<AnalysisStartedListener> TOPIC = Topic.create("SpotBugs Analysis Started", AnalysisStartedListener.class);
 
 	/**
 	 * Invoked by EDT.

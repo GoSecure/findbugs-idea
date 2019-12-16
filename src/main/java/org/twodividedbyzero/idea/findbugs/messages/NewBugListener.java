@@ -23,7 +23,7 @@ import org.jetbrains.annotations.NotNull;
 import org.twodividedbyzero.idea.findbugs.core.Bug;
 
 public interface NewBugListener {
-	Topic<NewBugListener> TOPIC = Topic.create("FindBugs New Bug", NewBugListener.class);
+	Topic<NewBugListener> TOPIC = Topic.create("SpotBugs New Bug", NewBugListener.class);
 
 	/**
 	 * Invoked by EDT.

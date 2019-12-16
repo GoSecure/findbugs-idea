@@ -28,7 +28,7 @@ import com.intellij.util.messages.Topic;
  * @since 0.9.995
  */
 public interface AnalysisAbortingListener {
-	Topic<AnalysisAbortingListener> TOPIC = Topic.create("FindBugs Analysis Aborting", AnalysisAbortingListener.class);
+	Topic<AnalysisAbortingListener> TOPIC = Topic.create("SpotBugs Analysis Aborting", AnalysisAbortingListener.class);
 
 	/**
 	 * Invoked by EDT.

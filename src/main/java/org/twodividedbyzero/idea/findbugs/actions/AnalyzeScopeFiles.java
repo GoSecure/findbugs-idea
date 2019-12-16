@@ -136,7 +136,7 @@ public final class AnalyzeScopeFiles extends AbstractAnalyzeAction {
 			@NotNull final AnalysisScope scope,
 			final boolean includeTests
 	) {
-		new FindBugsStarter(project, "Running FindBugs analysis...") {
+		new FindBugsStarter(project, "Running SpotBugs analysis...") {
 			@Override
 			protected void createCompileScope(@NotNull final CompilerManager compilerManager, @NotNull final Consumer<CompileScope> consumer) {
 				consumer.consume(compilerManager.createProjectCompileScope(project));
