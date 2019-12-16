@@ -33,7 +33,7 @@ import org.jetbrains.annotations.Nullable;
 		storages = {
 				// Remove both @Storage entry below and use only this if IDEA 15 support is gone: @Storage("findbugs-idea.xml")
 				@Storage(file = "$PROJECT_FILE$"),
-				@Storage(file = "$PROJECT_CONFIG_DIR$/findbugs-idea.xml", scheme = StorageScheme.DIRECTORY_BASED)
+				@Storage(file = "$PROJECT_CONFIG_DIR$/findbugs-idea.xml")
 		}
 )
 public final class ProjectSettings extends AbstractSettings implements PersistentStateComponent<ProjectSettings> {

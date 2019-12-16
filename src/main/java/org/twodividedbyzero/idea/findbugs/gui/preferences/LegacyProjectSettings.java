@@ -39,8 +39,8 @@ import org.twodividedbyzero.idea.findbugs.preferences.PersistencePreferencesBean
 @State(
 		name = FindBugsPluginConstants.PLUGIN_ID,
 		storages = {
-				@Storage(id = "other", file = "$PROJECT_FILE$", deprecated = true),
-				@Storage(id = "dir", file = "$PROJECT_CONFIG_DIR$/findbugs-idea.xml", scheme = StorageScheme.DIRECTORY_BASED, deprecated = true)})
+				@Storage(file = "$PROJECT_FILE$", deprecated = true),
+				@Storage(file = "$PROJECT_CONFIG_DIR$/findbugs-idea.xml", deprecated = true)})
 public final class LegacyProjectSettings implements PersistentStateComponent<PersistencePreferencesBean> {
 
 	private static final Logger LOGGER = Logger.getInstance(LegacyProjectSettings.class);

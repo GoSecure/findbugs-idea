@@ -1,7 +1,7 @@
 #!groovy
 
 plugins {
-    id "org.jetbrains.intellij" version "0.2.17"
+    id "org.jetbrains.intellij" version "0.4.15" //0.4.15 - 0.2.17
 }
 
 apply plugin: 'org.jetbrains.intellij'
@@ -20,7 +20,7 @@ intellij {
     if (project.hasProperty("ijVersion")) {
         version ijVersion
     } else {
-        version '2017.1'
+        version '2019.1'
     }
 
     pluginName 'spotbugs-idea'
@@ -34,15 +34,20 @@ runIde {
     systemProperties(["jdk.util.zip.ensureTrailingSlash":false])
 }
 
+/*
+//ERROR:
+//A problem occurred evaluating root project 'spotbugs-idea'.
+//> Could not find method runIdea() for arguments
+
 runIdea {
     systemProperties(["jdk.util.zip.ensureTrailingSlash":false])
 }
-
+*/
 dependencies {
-    compile ('com.github.spotbugs:spotbugs:3.1.1') {
+    compile ('com.github.spotbugs:spotbugs:3.1.12') {
         exclude group: 'xml-apis', module: 'xml-apis'
     }
-    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'org.jsoup:jsoup:1.12.1'
     compile fileTree(dir: "$project.rootDir/lib", include: "TableLayout-bin-*.jar")
     testCompile 'junit:junit:4.12'
     testCompile 'org.assertj:assertj-core:3.6.2'
