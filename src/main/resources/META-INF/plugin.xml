@@ -23,64 +23,13 @@
     <description>
         <![CDATA[
 		The SpotBugs plugin for IntelliJ IDEA<br/>
-		Provides static byte code analysis to look for bugs in Java code from within IntelliJ IDEA.
-		SpotBugs is a defect detection tool for Java that uses static analysis to look for more than 200 bug patterns,
+		SpotBugs-IDEA provides static byte code analysis to look for bugs in Java code from within IntelliJ.
+		The plugin uses SpotBugs under the hood. SpotBugs is a defect detection tool for Java that uses static analysis to look for more than 450 bug patterns,
 		such as null pointer dereferences, infinite recursive loops, bad uses of the Java libraries and deadlocks.
 		SpotBugs can identify hundreds of serious defects in large applications (typically about 1 defect per 1000-2000
 		lines of non-commenting source statements).
-		SpotBugs-IDEA uses SpotBugs&trade; under the hood. For more information
-		see <a href="https://github.com/spotbugs/spotbugs">https://github.com/spotbugs/spotbugs</a>.
-		<p>
-		..."We use IDEA inspections and SpotBugs complementary. SpotBugs is running in our continuous integration process and IDEA inspections are used during coding."
-		What about using both during coding from within IntelliJ IDEA?
-		</p>
-		<p>
-            <ul>
-                <li>for screenshots see <a href='http://andrepdo.github.io/findbugs-idea'>http://andrepdo.github.io/findbugs-idea</a></li>
-                <li>@see article at dzone: <a href='http://jetbrains.dzone.com/tips/intellij-idea-finds-bugs'>http://jetbrains.dzone.com/tips/intellij-idea-finds-bugs</a></li>
-            </ul>
-		</p>
-		<p>
-		SpotBugs-IDEA plugin features:
-		<ul>
-            <li>SpotBugs 3 support</li>
-            <li>Quickfix: annotate, suppress spotbugs patterns (GutterIcon and document markup (alt+enter))</li>
-            <li>idea 13.0 until the latest 15 EAP compatibility</li>
-            <li>configure findbugs on idea project and module level</li>
-            <li>jump to source from results shown in toolwindow including anonymous classes</li>
-            <li>bug descriptions, solutions</li>
-            <li>run analysis always in background</li>
-            <li>run findbugs analysis on all affected files after compile/automake</li>
-            <li>min. priority to report</li>
-            <li>background scanning</li>
-            <li>configurable effort run level</li>
-            <li>configurable detectors</li>
-            <li>bug categories to report</li>
-            <li>file filter (include, exclude, exclude baseline bugs)</li>
-            <li>load additional detector plugins like fb-contrib.jar</li>
-            <li>group results by: bug category, classname, package, priority, bug rank</li>
-            <li>intellij local history support</li>
-            <li>quick search within the result tree</li>
-            <li>basic Scala, Groovy and AspectJ support</li>
-            <li>Analyze actions (all actions are also available in the intellij project tree, toolbar menu, context menu):
-                <ul>
-                    <li>analyze all modified files</li>
-                    <li>analyze all files on the active changelist (available from SpotBugs-IDEA main ToolWindow and the ChangelistToolWindow)</li>
-                    <li>analyze class under cursor</li>
-                    <li>analyze current editor file</li>
-                    <li>analyze all files of an intellij project</li>
-                    <li>analyze all files of an intellij module</li>
-                    <li>analyze all files of the selected package</li>
-                    <li>analyze a bunch of selected files (project tree)</li>
-                    <li>analyze a scope</li>
-                </ul>
-            </li>
-            <li>export a bug collection to html and/or xml with limited configurable dir based archive support</li>
-            <li>import a bug collection from xml</li>
-            <li>configurable : open an exported bug collection html page in the intellij configured browser</li>
-            <li>configurable : preview found bugs in an editor preview panel</li>
-		</ul>
-		</p>
+		<br/>
+		For more information see <a href="https://github.com/spotbugs/spotbugs">https://github.com/spotbugs/spotbugs</a>.
 		]]>
     </description>
     <change-notes>
@@ -88,8 +37,8 @@
         <h3>1.0.2</h3>
         <ul>
             <li>Migrated build system to gradle and gradle-intellij-plugin</li>
-            <li>Migrated to SpotBugs 3.1.1</li>
-            <li>Plugin compatibility: IDEA 2017</li>
+            <li>Migrated to SpotBugs 3.1.12</li>
+            <li>Plugin compatibility: IDEA 2019</li>
         </ul>
         <h3>1.0.1</h3>
         <ul>
@@ -315,8 +264,7 @@
     </change-notes>
     <id>SpotBugs-IDEA</id>
     <version>@VERSION@</version>
-    <vendor email="see@https://github.com/andrepdo" url="https://github.com/andrepdo">Andre Pfeiler
-    </vendor>
+    <vendor url="https://github.com/andrepdo">Andre Pfeiler</vendor>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html
          -->
